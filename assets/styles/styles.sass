@@ -1,0 +1,1005 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap')
+
+/* Element specific
+*
+    font-size: 15px
+    font-family: "Roboto", sans-serif
+    box-sizing: border-box
+
+a
+    color: #2d2d2d
+    text-decoration: none
+    transition: 0.3s
+    cursor: pointer !important
+
+button
+    background-color: transparent
+    border: 1px solid #2d2d2d
+    text-align: center
+    transition: background 0.3s
+    cursor: pointer !important
+
+    &:hover
+        color: #FFFFFF
+        background-color: #990100
+        border-color: #990100
+
+/* Main page structures
+html
+    scroll-behavior: smooth
+
+#page-mask
+    z-index: 150
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #2d2d2d
+    opacity: 0.8
+
+body
+    margin: 0 auto
+    padding: 0
+    color: #2d2d2d
+    background: #FFFFFF
+    overflow-x: hidden
+    max-width: 1920px
+
+section
+    width: 100%
+    padding: 40px 100px !important
+
+/* Section 1
+#section-1
+    top: 0
+    height: 100vh
+    background-color: rgba(255, 255, 255, 0.4)
+
+.background-video
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: -100
+    position: absolute
+    object-fit: cover
+    max-width: 1920px
+
+/* Nav bar
+nav
+    top: 0
+    left: 0
+    position: relative
+    padding: 20px 0
+    background: transparent
+    overflow: hidden
+    display: flex
+    transition: all .3s ease-in-out
+    align-items: center
+    justify-content: space-between
+    a
+        padding: 0 15px
+        transition: 0.3s
+        &:hover
+            color: #990100
+
+.fixed-nav
+    overflow: hidden
+    position: fixed
+    display: flex
+    align-items: center
+    width: 100vw
+    max-width: 1920px
+    top: 0
+    margin: 0
+    padding: 10px 100px
+    left: 0
+    background: #FFFFFF
+    z-index: 100
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5)
+    transition: all 0.3s ease-in-out
+    img
+        margin-top: 10px
+
+#menu
+    position: fixed
+    margin: 0
+    padding: 20px 30px
+    top: 0
+    left: 0
+    z-index: 300
+    height: 100%
+    color: #FFFFFF
+    background-color: #282f37
+    box-shadow: -7px 0 15px 5px #010101
+    overflow: hidden
+    a
+        margin: 15px 0
+        display: inline-block
+        color: #FFFFFF
+        width: 100%
+        padding-bottom: 10px
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08)
+        transition: color 0.3s
+        line-height: 20px
+
+#login-btn-2
+    color: #FFFFFF
+    border-color: #ADADAD
+    width: 100%
+    padding: 10px 0
+    background-color: #353535
+    margin-bottom: 20px
+
+.logo
+    height: 60px
+
+#currency-btn
+    padding: 5px 15px
+    line-height: 24px
+    margin: 15px
+    border-radius: 3px
+    transition: 0.3s
+    display: flex
+    align-items: center
+    i
+        margin-left: 10px
+
+#currency-list
+    padding: 0
+    margin: -10px -15px
+    z-index: 100
+    position: fixed
+    list-style: none
+    border-radius: 3px
+    border: 1px solid rgba(0, 0, 0, 0.15)
+    transition: all 0.2s ease-in-out
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18)
+    background: #FFFFFF
+    border: none
+    overflow: hidden
+    li
+        padding: 8px 15px
+        text-align: center
+        transition: 0.2s
+        cursor: pointer !important
+        background: transparent
+        &:hover
+            color: #FFFFFF
+            border-color: #990100
+            background-color: #990100
+        a
+            color: inherit !important
+            transition: 0.2s
+
+#login-btn, #favourites-btn
+    margin-right: 10px
+
+#menu-btn
+    display: none
+    padding: 7px 10px
+
+#login-btn, #favourites-btn
+    padding: 7px 10px
+
+main
+    text-align: center
+    h1
+        margin: 0
+        margin-bottom: 5px
+        padding: 0 20px
+        font-weight: 200
+        font-size: 42px
+        line-height: 42px
+        text-shadow: 1.5px 2.598px 5px rgba(0, 0, 0, 0.4)
+    p
+        margin: 0
+        margin-bottom: 20px
+        padding: 0 20px
+        line-height: 27px
+        text-shadow: 1.5px 2.598px 5px rgba(0, 0, 0, 0.4)
+        font-size: 17px
+        font-weight: 200
+        text-align: center
+        text-size-adjust: 100%
+
+.carousel-1
+    margin: 0 auto
+    padding: 0
+    max-width: 1000px
+    .item
+        width: 80px
+        margin: 0 auto
+        display: inline-block
+        border-radius: 4px
+        color: #FFFFFF
+        background: #2d2d2d
+        padding: 15px 25px
+        text-align: center
+        transition: 0.3s
+        box-sizing: content-box !important
+        &:hover
+            background: #990100
+        h3
+            margin: 0
+            text-align: center
+            font-weight: 300
+        img
+            display: inline-block
+
+.icon
+    max-width: 40px
+    max-height: 40px
+
+#map-btn
+    position: absolute
+    bottom: 0
+    left: 50%
+    text-align: center
+    transform: translateX(-50%)
+
+.map-marker img
+    width: 65px
+
+#search-on-map
+    border-radius: 4px
+    padding: 10px 25px
+    line-height: 21px
+    transition: 0.3s
+    margin-bottom: 20px
+    color: #FFFFFF
+    background: #2d2d2d
+    display: flex
+    align-items: center
+    img
+        margin-right: 10px
+    &:hover
+        background: #990100
+
+/* Section 2
+#section-2
+    margin: 0
+    padding: 40px 0
+
+.row
+    h1
+        margin: 0
+        margin-bottom: 5px
+        font-weight: 500
+        font-size: 28px
+        line-height: 31px
+    h2
+        margin: 0
+        font-weight: 300
+        font-size: 17px
+        line-height: 19px
+
+/* Properties
+.carousel-2
+    margin: 0 auto
+    margin-top: 20px
+
+#property-card
+    width: 290px
+    margin: 10px auto
+    text-align: left
+    .details
+        padding: 20px
+    .location
+        line-height: 21px
+        color: rgba(33, 33, 33, 0.5)
+    .title
+        margin: 5px 0
+        font-size: 16px
+        line-height: 16px
+        font-weight: 400
+        white-space: nowrap
+        overflow: hidden
+    .price
+        font-size: 22px
+        font-weight: 700
+        line-height: 22px
+    .unit
+        line-height: 15px
+        font-weight: 500
+    .price
+        display: inline
+
+.unit
+    display: inline
+
+.like-btn
+    position: absolute
+    bottom: 8px
+    right: 8px
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 25px
+    width: 25px
+    border-color: #FFFFFF
+    background-color: #FFFFFF
+    &:hover
+        color: #FFFFFF
+        background-color: #990100
+
+/* Section 3
+#section-3
+    margin: 0
+    padding: 40px 0
+    background: #e8e8e8
+
+.more-articles
+    display: flex
+    align-items: center
+    font-size: 22px
+    line-height: 22px
+    i
+        margin-left: 10px
+        font-size: 30px
+
+#development-news
+    .container
+        display: flex
+        margin: 20px auto
+        text-align: left
+        max-width: 1300px
+    .card
+        float: left
+        background: #FFFFFF
+        margin-right: 10px
+        overflow: hidden
+        img
+            height: 490px
+        .content
+            padding: 20px 15px
+        h2
+            color: rgba(33, 33, 33, 0.5)
+            font-size: 17px
+        h1
+            font-size: 22px
+            line-height: 22px
+            padding: 15px 0
+
+/* Section 4
+#section-4
+    margin: 0
+    margin-bottom: 40px
+    padding: 40px 0
+
+/* Popular
+#popular .container
+    margin: 20px 0
+    max-width: 1200px
+
+.left-col
+    width: 48%
+    float: left
+    margin-right: 10px
+    height: 550px
+
+.middle-col
+    width: 25%
+    float: left
+    margin-right: 10px
+    height: 550px
+
+.right-col
+    width: 25%
+    float: left
+    height: 550px
+    .popular-card:nth-child(2)
+        margin-top: 10px
+
+.middle-col .popular-card:nth-child(2)
+    margin-top: 10px
+
+.left-col .popular-card
+    height: 550px
+
+.right-col .popular-card img, .middle-col .popular-card img
+    max-height: 200px
+
+.popular-card
+    margin: 0
+    width: 100%
+    height: 270px
+    .location
+        margin: 0
+        padding: 20px
+        font-size: 20px
+        line-height: 29px
+        text-align: left
+        white-space: wrap
+
+/* Section 5
+#section-5
+    margin: 0
+    padding: 40px 0
+    background: #e8e8e8
+    .container
+        margin-top: 20px
+        display: flex
+        justify-content: center
+
+.feedback-card
+    width: calc(50% - 10px)
+    height: 100%
+    width: 100%
+    border-radius: 3px
+    display: flex
+    background: #FFFFFF
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25)
+    text-align: left
+    height: 260px
+    align-items: center
+    max-width: 600px
+    &:nth-child(1)
+        margin-right: 10px
+    .left
+        width: 30%
+        height: 100%
+    .right
+        position: relative
+        padding: 20px 10px
+        width: 70%
+        float: left
+        min-width: 360px
+        padding: 20px 30px
+
+.starboard
+    color: #FFD700
+
+.contact-info
+    display: flex
+    width: 100%
+    align-items: center
+    .top-right
+        position: absolute
+        top: 0
+        right: 20px
+        font-size: 120px
+        font-family: sans-serif
+        color: #990100
+    h2
+        font-size: 20px
+    h3
+        margin: 0
+        font-size: 15px
+        font-weight: 400
+    .left
+        display: block !important
+    .thumbnail
+        margin-right: 20px
+
+/* Footer
+footer
+    text-align: center
+    h1
+        font-weight: 400
+
+.contact-card
+    margin: 10px
+    padding: 15px
+    border-radius: 5px
+    font-weight: 300
+    line-height: 15px
+    display: inline-block
+    transition: 0.3s
+    color: #FFFFFF
+    background: #2d2d2d
+    display: flex
+    align-items: center
+    font-weight: 400
+    text-align: left
+    .left
+        margin-right: 10px
+
+.thumbnail
+    height: 50px !important
+    width: 50px !important
+    border-radius: 50%
+    background-size: cover
+    background-position: center center
+
+.contact-card
+    &:hover
+        background: #990100
+    p
+        margin: 0
+    a
+        color: #FFFFFF
+
+#newsletter-container
+    margin-top: 20px
+    width: 100%
+
+.newsletter
+    border-radius: 5px
+    overflow: hidden
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.35)
+    &:hover
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5)
+        button
+            background: #990100
+
+    button
+        height: 100%
+        border: none
+        color: #FFFFFF
+        background: #2d2d2d
+        padding: 15px 20px
+        border-radius: 0
+        &:hover
+            border: inherit
+
+    input
+        border: 1px solid rgba(33, 33, 33, 0.5)
+        border-radius: 5px 0 0 5px
+        height: 100%
+        padding: 14px 20px
+
+.tele-no
+    line-height: 21px
+
+.address-info
+    font-size: 17px
+    font-weight: 900
+    line-height: 17px
+
+footer
+    h1
+        font-size: 36px
+        line-height: 43px
+    #newsletter
+        width: 100%
+
+
+.banner
+    margin: 0
+    width: 100%
+    height: 100%
+    object-fit: contain
+    object-position: bottom
+
+.socials-bar
+    margin: 20px 0
+    a
+        margin: 0 5px
+        transition: all 0.3s
+        &:hover
+            color: #990100
+
+.footer-nav
+    padding: 7px 0
+    display: inline-block
+    a
+        padding: 0 20px
+        line-height: 20px
+        transition: 0.3s
+        &:hover
+            color: #990100
+
+.to-top-btn
+    position: absolute
+    bottom: 5px
+    right: 5px
+    z-index: 200
+
+.copy-right-bar
+    margin: 0
+    padding: 7px 0
+    font-size: 10px
+    line-height: 16px
+    text-align: center
+    color: rgba(255, 255, 255, 0.7)
+    background: #2d2d2d
+
+/* Login popup
+#login-close-btn
+    position: fixed
+    top: 15px
+    right: 15px
+    border: none
+    &:hover
+        color: #990100
+        background: inherit
+
+#login-popup
+    z-index: 200
+    border-radius: 5px
+    background-color: #FFFFFF
+    display: inline-block
+    position: fixed
+    top: 50%
+    left: 50%
+    padding: 40px 30px
+    transform: translate(-50%, -50%)
+    width: 350px
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+    .container
+        width: 100%
+    h3
+        font-size: 22px
+        line-height: 24px
+        font-weight: 400
+        margin: 0
+        padding: 0
+    p
+        margin: 0
+        padding: 0
+        font-weight: 300
+    .slider
+        display: block
+        margin: 20px 0
+        line-height: 15px
+        border-bottom: 1px solid rgba(33, 33, 33, 0.25)
+
+.slider button
+    padding: 10px 15px
+    display: inline-block
+    cursor: pointer
+    transition: 0.3
+    border: none
+    &:hover
+        color: inherit
+        border: none
+        background: inherit
+
+#login-popup a:hover
+    color: #990100
+
+.slider .active
+    border-bottom: 2px solid #990100
+    &:hover
+        border-bottom: 2px solid #990100
+
+#login-panel
+    width: 100%
+    display: block
+
+    input
+        padding: 10px 5px
+        margin-top: 5px
+        width: 100%
+        border: 1px solid rgba(33, 33, 33, 0.25)
+        border-radius: 2px
+        &::placeholder
+            font-size: 13px
+            line-height: 19px
+            font-weight: 400
+        &:focus
+            border-color: #990100
+
+    label
+        display: inline-block
+        margin-top: 10px
+        font-weight: 500
+        line-height: 15px
+
+#username, #password
+    display: inline-block
+
+#pop-login-btn
+    width: 100%
+    margin: 20px 0
+    color: #FFFFFF
+    background: #2d2d2d
+    border-radius: 3px
+    line-height: 21px
+    font-weight: 400
+    padding: 10px 0
+
+.socials-login
+    margin-top: 20px
+    margin-bottom: 20px
+    line-height: 21px
+
+.social-btn
+    width: 100%
+    height: 40px
+    border: none
+    color: inherit
+    background: inherit
+    &:hover
+        width: 100%
+        height: 40px
+        border: none
+        color: inherit
+        background: inherit
+    .left
+        padding: 8px 10px
+    b
+        font-weight: 500
+    svg
+        max-width: 25px
+        max-height: 25px
+        box-sizing: content-box !important
+
+#fb-btn p, #gl-btn p
+    padding-top: 10px
+
+#fb-btn
+    color: #FFFFFF
+    background: #4267b2
+
+#gl-btn
+    margin-top: 10px
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25)
+
+/* Positioning classes
+.left
+    float: left
+
+.right
+    float: right
+
+.flex-left
+    margin-right: auto
+
+.flex-right
+    margin-left: auto
+
+.center
+    top: 50%
+    left: 50%
+    width: 100%
+    position: absolute
+    text-align: center
+    transform: translate(-50%, -50%)
+
+.text-center
+    text-align: center
+
+.btm-center
+    left: 50%
+    bottom: 0
+    position: absolute
+    text-align: center
+    transform: translate(-50%, -50%)
+
+/* Utilities
+.lorem:after
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula iaculis diam, sit amet condimentum elit pellentesque quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula iaculis diam, sit amet condimentum elit pellentesque quis."
+
+.hidden
+    display: none !important
+
+.container
+    display: inline-block
+
+.round
+    border-radius: 50%
+
+.inherit
+    color: inherit
+    font-size: inherit
+    font-weight: inherit
+
+.hide-overflow
+    position: relative
+    overflow: hidden
+
+.card
+    cursor: pointer !important
+    border-radius: 5px
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25)
+    &:hover
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    img
+        width: 100%
+        border-radius: 5px 5px 0 0
+        transition: all 0.4s
+    &:hover img
+        transform: scale(1.25)
+        border-radius: 5px 5px 0 0
+
+.strike-through
+    text-align: center
+    border-bottom: 1px solid rgba(33, 33, 33, 0.25)
+    line-height: 0.1em
+    span
+        background: #FFFFFF
+        padding: 0 10px
+
+.leading-line
+    position: relative
+    div
+        margin-left: 280px
+        height: 3px
+        position: absolute
+        top: 50%
+        left: 0
+        width: calc(100% - 210px)
+        background: rgba(153, 1, 0, 0.5)
+
+.bounce
+    position: relative
+    animation: bounce 1s infinite
+    animation-duration: 2s
+
+@keyframes bounce
+    0%
+        bottom: 0
+    10%
+        bottom: 20px
+    20%
+        bottom: 0
+
+.mobile-show
+    display: none
+
+/* Media queries
+@media (max-width: 1400px)
+    /* Adjust feedback-card
+    #section-5
+        .container
+            justify-content: space-between
+            flex-direction: column
+            margin: 0
+        .feedback-card
+            float: none !important
+            margin: 0 auto
+            margin-top: 20px
+
+    /* Adjust popular-card
+    #popular .container
+        width: 600px
+
+    .left-col, .right-col
+        width: 100%
+        height: 100%
+
+    .middle-col
+        width: 100%
+        height: 100%
+        margin-top: 10px
+
+    .right-col
+        margin-top: 10px
+        .popular-card
+            width: 49%
+            margin: 0 !important
+
+    .middle-col .popular-card
+        width: 49%
+        margin: 0 !important
+
+    .right-col .popular-card:nth-child(2), .middle-col .popular-card:nth-child(2)
+        margin-left: 10px
+
+@media (min-width: 1920px)
+    .fixed-nav, .background-video
+        left: auto
+
+@media (max-width: 1080px)
+    /* Adjust development-news
+    #development-news .card
+        margin: 0 auto
+        &:nth-child(2), &:nth-child(3)
+            display: none
+        img
+            height: auto
+
+@media (max-width: 880px)
+    /* Adjust nav
+    nav .right a
+        display: none
+
+    #currency-btn
+        margin: 15px 0
+        margin-right: 20px
+
+    #login-btn, #favourites-btn
+        display: none
+
+    #menu-btn
+        display: initial
+
+    /* Hide footer-nav
+    .footer-nav
+        display: none
+
+    /* Adjust feedback-card
+    .feedback-card
+        .left, .top-right
+            display: none
+        p
+            padding: 0
+        .right
+            margin: 0 auto
+
+@media (max-width: 720px)
+    /* Adjust popular-card
+    #popular .container
+        width: 300px
+
+    .left-col, .middle-col
+        margin-right: 0
+
+    .left-col .popular-card, .right-col .popular-card
+        margin-top: 20px !important
+        width: 100%
+        height: 300px
+
+    .middle-col
+        margin-top: 0
+        .popular-card
+            margin-top: 20px !important
+            width: 100%
+            height: 300px
+
+    .right-col
+        margin-top: 0
+
+@media (max-width: 678px)
+    /* Adjust nav
+    nav
+        padding: 0
+        .left, .right
+            margin: 0
+
+    .fixed-nav
+        .left, .right
+            margin: 0
+
+    /* Adjust #section-1
+    #section-1
+        h1
+            font-size: 30px
+        p
+            font-size: 20px
+
+    section
+        margin: 0
+        padding: 20px !important
+
+    /* Adjust footer contact-card
+    #contact-cards
+        margin-bottom: 10px
+
+    .contact-card
+        float: none !important
+
+    .leading-line div
+        width: calc(100% - 260px) !important
+
+@media (max-width: 600px)
+    .logo
+        width: 150px
+        height: auto
+
+@media (max-width: 500px)
+    /* QOL Adjustments for mobile
+    .mobile-hide
+        display: none
+
+    .mobile-show
+        display: initial
+
+    .map-marker
+        display: none
+
+    #search-on-map
+        margin-bottom: 40px
+
+    footer h1
+        font-size: 25px
+
+    .address-info p
+        font-size: 15px
+
+    nav
+        padding: 0
+
+    .fixed-nav
+        padding: 0
+        justify-content: center
+        .flex-left, .flex-right
+            margin: 0
+
+@media (max-width: 360px)
+    .feedback-card .right
+        font-size: 10px
+        padding: 10px

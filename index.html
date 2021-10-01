@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Massar Briggs</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="./assets/icons/favicons/cropped-Fav-32x32.png" sizes="32x32">
+    <link rel="icon" href="./assets/icons/favicons/cropped-Fav-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="./assets/icons/favicons/cropped-Fav-180x180.png" sizes="180x180">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/libs/aos/aos.css" />
+    <link rel="stylesheet" href="./assets/libs/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/libs/owlcarousel/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+
+    <!-- Scripts -->
+    <script src="./assets/libs/jquery/jquery.min.js"></script>
+    <script src="./assets/libs/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/c89aa4f49d.js" crossorigin="anonymous"></script>
+
+    <script src="./assets/scripts/index.js"></script>
+</head>
+
+<body>
+    <div id="page-mask" class="hidden"></div>
+    <!-- Section 1 -->
+    <section id="section-1">
+        <!-- Background video -->
+        <video id="content" autoplay muted loop class="background-video">
+            <source src="./assets/videos/background-video.mp4" type="video/mp4">
+        </video>
+
+        <!-- Nav bar-->
+        <nav id="nav-bar">
+            <div class="left">
+                <a class="blank" href="#"><img class="logo" src="./assets/images/header-logo.png"></a>
+            </div>
+
+            <div class="right">
+                <a href="#buy">Buy</a>
+                <a href="#rent">Rent</a>
+                <a href="#sell">Sell</a>
+                <a href="#faq">FAQ</a>
+
+                <div class="container">
+                    <button class="transparent" id="currency-btn">LKR<i class="fas fa-angle-down"></i></button>
+                    <ul id="currency-list" class="hidden">
+                        <li><a class="button" href="./?currency=AUD">LKR > AUD</a></li>
+                        <li><a class="button" href="./?currency=USD">LKR > USD</a></li>
+                        <li><a class="button" href="./?currency=GBP">LKR > GBP</a></li>
+                    </ul>
+                </div>
+
+                <button class="round" id="login-btn"><i class="far fa-user"></i></button>
+                <button class="round" id="favourites-btn"><i class="far fa-heart"></i></button>
+                <button class="round" id="menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+
+            <div id="menu" class="hidden">
+                <button id="login-btn-2">Sign in or Register</button>
+                <a href="#buy">Buy</a>
+                <a href="#rent">Rent</a>
+                <a href="#sell">Sell</a>
+                <a href="#request-a-property">Request a Property</a>
+                <a href="#blog">Blog</a>
+                <a href="#about-us">About Us</a>
+                <a href="#contact-us">Contact Us</a>
+            </div>
+        </nav>
+
+        <main class="center">
+            <h1>Find your dream properties all over the Sri Lanka</h1>
+            <p>Whether you're looking to buy or rent in Sri Lanka you've come to the right place.</p>
+
+            <div class="carousel-1">
+                <div class="owl-carousel owl-theme">
+                    <a class="item" href="#lands">
+                        <img class="icon" src="./assets/icons/land.png">
+                        <h3>Lands</h3>
+                    </a>
+                    <a class="item" href="#houses">
+                        <img class="icon" src="./assets/icons/house.png">
+                        <h3>Houses</h3>
+                    </a>
+                    <a class="item" href="#apartments">
+                        <img class="icon" src="./assets/icons/apartment.png">
+                        <h3>Apartments</h3>
+                    </a>
+                    <a class="item" href="#commercial">
+                        <img class="icon" src="./assets/icons/commercial.png">
+                        <h3>Commercial</h3>
+                    </a>
+                    <a class="item" href="#estates">
+                        <img class="icon" src="./assets/icons/estate.png">
+                        <h3>Estates</h3>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <div id="map-btn">
+            <div class="map-marker bounce">
+                <img src="https://massarbriggs.com/wp-content/webp-express/webp-images/doc-root/wp-content/themes/massar/assets/theme-images/sl-marker.png.webp" alt="">
+            </div>
+            <button id="search-on-map"><img class="mobile-show" width="20px" src="https://massarbriggs.com/wp-content/webp-express/webp-images/doc-root/wp-content/themes/massar/assets/theme-images/sl-marker.png.webp" alt="">Search on Map</button>
+        </div>
+    </section>
+    <!-- End: Section 1-->
+
+    <!-- Section 2-->
+    <section id="section-2">
+        <div class="row" id="properties">
+            <h1 class="leading-line" data-aos="zoom-out">Exclusive properties<div></div></h1>
+            <h2 data-aos="zoom-out">Check out some of the latest best properties</h2>
+
+            <div class="carousel-2" data-aos="fade-up">
+                <div class="owl-carousel owl-theme">
+                    <div class="card" id="property-card">
+                        <a href="#land-1">
+                            <div class="hide-overflow">
+                                <img src="./assets/images/WhatsApp-Image-2021-08-20-at-10.20.09-300x236.jpeg.webp">
+                                <a href="./post/1?liked=true" class="like-btn round"><i class="far fa-heart"></i></i></a>
+                            </div>
+
+                            <div class="details">
+                                <label class="location">Colombo 5</label>
+                                <h3 class="title">Newly refurbished Gem on idyllic Skelton Road, Colombo 05.</h3>
+                                <lable class="price-tag">
+                                    <p class="price">LKR 400,000</p>
+                                    <p class="unit">/month</p>
+                                </lable>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card" id="property-card">
+                        <a href="#land-1">
+                            <div class="hide-overflow">
+                                <img src="./assets/images/WhatsApp-Image-2021-08-20-at-10.20.09-300x236.jpeg.webp">
+                                <a href="./post/1?liked=true" class="like-btn round"><i class="far fa-heart"></i></i></a>
+                            </div>
+
+                            <div class="details">
+                                <label class="location">Colombo 5</label>
+                                <h3 class="title">Newly refurbished Gem on idyllic Skelton Road, Colombo 05.</h3>
+                                <lable class="price-tag">
+                                    <p class="price">LKR 400,000</p>
+                                    <p class="unit">/month</p>
+                                </lable>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card" id="property-card">
+                        <a href="#land-1">
+                            <div class="hide-overflow">
+                                <img src="./assets/images/WhatsApp-Image-2021-08-20-at-10.20.09-300x236.jpeg.webp">
+                                <a href="./post/1?liked=true" class="like-btn round"><i class="far fa-heart"></i></i></a>
+                            </div>
+
+                            <div class="details">
+                                <label class="location">Colombo 5</label>
+                                <h3 class="title">Newly refurbished Gem on idyllic Skelton Road, Colombo 05.</h3>
+                                <lable class="price-tag">
+                                    <p class="price">LKR 400,000</p>
+                                    <p class="unit">/month</p>
+                                </lable>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card" id="property-card">
+                        <a href="#land-1">
+                            <div class="hide-overflow">
+                                <img src="./assets/images/WhatsApp-Image-2021-08-20-at-10.20.09-300x236.jpeg.webp">
+                                <a href="./post/1?liked=true" class="like-btn round"><i class="far fa-heart"></i></i></a>
+                            </div>
+
+                            <div class="details">
+                                <label class="location">Colombo 5</label>
+                                <h3 class="title">Newly refurbished Gem on idyllic Skelton Road, Colombo 05.</h3>
+                                <lable class="price-tag">
+                                    <p class="price">LKR 400,000</p>
+                                    <p class="unit">/month</p>
+                                </lable>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card" id="property-card">
+                        <a href="#land-1">
+                            <div class="hide-overflow">
+                                <img src="./assets/images/WhatsApp-Image-2021-08-20-at-10.20.09-300x236.jpeg.webp">
+                                <a href="./post/1?liked=true" class="like-btn round"><i class="far fa-heart"></i></i></a>
+                            </div>
+
+                            <div class="details">
+                                <label class="location">Colombo 5</label>
+                                <h3 class="title">Newly refurbished Gem on idyllic Skelton Road, Colombo 05.</h3>
+                                <lable class="price-tag">
+                                    <p class="price">LKR 400,000</p>
+                                    <p class="unit">/month</p>
+                                </lable>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card" id="property-card">
+                        <a href="#land-1">
+                            <div class="hide-overflow">
+                                <img src="./assets/images/WhatsApp-Image-2021-08-20-at-10.20.09-300x236.jpeg.webp">
+                                <a href="./post/1?liked=true" class="like-btn round"><i class="far fa-heart"></i></i></a>
+                            </div>
+
+                            <div class="details">
+                                <label class="location">Colombo 5</label>
+                                <h3 class="title">Newly refurbished Gem on idyllic Skelton Road, Colombo 05.</h3>
+                                <lable class="price-tag">
+                                    <p class="price">LKR 400,000</p>
+                                    <p class="unit">/month</p>
+                                </lable>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card" id="property-card">
+                        <a href="#land-1">
+                            <div class="hide-overflow">
+                                <img src="./assets/images/WhatsApp-Image-2021-08-20-at-10.20.09-300x236.jpeg.webp">
+                                <a href="./post/1?liked=true" class="like-btn round"><i class="far fa-heart"></i></i></a>
+                            </div>
+
+                            <div class="details">
+                                <label class="location">Colombo 5</label>
+                                <h3 class="title">Newly refurbished Gem on idyllic Skelton Road, Colombo 05.</h3>
+                                <lable class="price-tag">
+                                    <p class="price">LKR 400,000</p>
+                                    <p class="unit">/month</p>
+                                </lable>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card" id="property-card">
+                        <a href="#land-1">
+                            <div class="hide-overflow">
+                                <img src="./assets/images/WhatsApp-Image-2021-08-20-at-10.20.09-300x236.jpeg.webp">
+                                <a href="./post/1?liked=true" class="like-btn round"><i class="far fa-heart"></i></i></a>
+                            </div>
+
+                            <div class="details">
+                                <label class="location">Colombo 5</label>
+                                <h3 class="title">Newly refurbished Gem on idyllic Skelton Road, Colombo 05.</h3>
+                                <lable class="price-tag">
+                                    <p class="price">LKR 400,000</p>
+                                    <p class="unit">/month</p>
+                                </lable>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card" id="property-card">
+                        <a href="#land-1">
+                            <div class="hide-overflow">
+                                <img src="./assets/images/WhatsApp-Image-2021-08-20-at-10.20.09-300x236.jpeg.webp">
+                                <a href="./post/1?liked=true" class="like-btn round"><i class="far fa-heart"></i></i></a>
+                            </div>
+
+                            <div class="details">
+                                <label class="location">Colombo 5</label>
+                                <h3 class="title">Newly refurbished Gem on idyllic Skelton Road, Colombo 05.</h3>
+                                <lable class="price-tag">
+                                    <p class="price">LKR 400,000</p>
+                                    <p class="unit">/month</p>
+                                </lable>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card" id="property-card">
+                        <a href="#land-1">
+                            <div class="hide-overflow">
+                                <img src="./assets/images/WhatsApp-Image-2021-08-20-at-10.20.09-300x236.jpeg.webp">
+                                <a href="./post/1?liked=true" class="like-btn round"><i class="far fa-heart"></i></i></a>
+                            </div>
+
+                            <div class="details">
+                                <label class="location">Colombo 5</label>
+                                <h3 class="title">Newly refurbished Gem on idyllic Skelton Road, Colombo 05.</h3>
+                                <lable class="price-tag">
+                                    <p class="price">LKR 400,000</p>
+                                    <p class="unit">/month</p>
+                                </lable>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Section 2 -->
+
+    <!-- Section 3 -->
+    <section id="section-3">
+        <div class="row" id="development-news">
+            <h1 class="leading-line" data-aos="zoom-out">Development news<div></div></h1>
+            <h2 data-aos="zoom-out">Check out the latest and best properties published on our website.</h2>
+
+            <div class="text-center">
+                <div class="container"  data-aos="fade-up">
+                    <div class="card">
+                        <a href="#top-20-luxury">
+                            <div class="hide-overflow">
+                                <img src="./assets/images/house-1.png">
+                            </div>
+                            <div class="content">
+                                <h2>Jan 24</h2>
+                                <h1>Top 20 luxury houses in colombo</h1>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#selling-best-house-in-colombo">
+                            <div class="hide-overflow">
+                                <img src="./assets/images/house-2.png">
+                            </div>
+                            <div class="content">
+                                <h2>Feb 24</h2>
+                                <h1>Selling a best house in colombo</h1>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#top-10-interior-designs">
+                            <div class="hide-overflow">
+                                <img src="./assets/images/interior.png">
+                            </div>
+                            <div class="content">
+                                <h2>Feb 24</h2>
+                                <h1>Top 10 interior designs on low budget</h1>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="./more-articles" class="more-articles mobile-hide">Read all articles<i class="fas fa-angle-double-right"></i></a>
+    </section>
+    <!-- End: Section 3 -->
+
+    <!-- Section 4 -->
+    <section id="section-4">
+        <div class="row" id="popular">
+            <h1 class="leading-line" data-aos="zoom-out">Most popular places<div></div></h1>
+            <h2 data-aos="zoom-out">Best places to live in Sri Lanka.</h2>
+
+            <div class="text-center">
+                <div class="container" data-aos="fade-up">
+                    <div class="left-col">
+                        <div class="card popular-card">
+                            <a href="#colombo">
+                                <div class="hide-overflow">
+                                    <img src="./assets/images/city-colombo.jpg">
+                                </div>
+                                <p class="location">Colombo</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="middle-col">
+                        <div class="card left popular-card">
+                            <a href="#kandy">
+                                <div class="hide-overflow">
+                                    <img src="./assets/images/city-kandy.jpg">
+                                </div>
+                                <p class="location">Kandy</p>
+                            </a>
+                        </div>
+
+                        <div class="card right popular-card">
+                            <a href="#galle">
+                                <div class="hide-overflow">
+                                    <img src="./assets/images/city-galle-v3.jpg">
+                                </div>
+                                <p class="location">Galle</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="right-col">
+                        <div class="card left popular-card">
+                            <a href="#nuwara-eliya">
+                                <div class="hide-overflow">
+                                    <img src="./assets/images/city-nuwara-eliya.jpg">
+                                </div>
+                                <p class="location">Nuwara Eliya</p>
+                            </a>
+                        </div>
+
+                        <div class="card right popular-card">
+                            <a href="#tangalle">
+                                <div class="hide-overflow">
+                                    <img src="./assets/images/city-tangalle.jpg">
+                                </div>
+                                <p class="location">Tangalle</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Section 4-->
+
+    <!-- Section 5 -->
+    <section id="section-5">
+        <div class="row">
+            <h1 class="leading-line" data-aos="zoom-out">From our clients<div></div></h1>
+            <h2 data-aos="zoom-out">Why you should work with us?</h2>
+
+            <div class="container" data-aos="fade-up">
+                <div class="feedback-card left">
+                    <img class="left" src="./assets/images/interior-2.png">
+                    <div class="right">
+                        <div class="contact-info">
+                            <div class="top-right">“</div>
+                            <div class="left thumbnail" style="background-image: url(./images/WhatsApp-Image-2020-06-22-at-10.10.11-AM-254x300.jpeg);"></div>
+                            <div>
+                                <h2>Mr. Darshana Perera</h2>
+                                <h3>Buissnessmen - Oral Lanka</h3>
+                                <div class="starboard"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="lorem"></p>
+                    </div>
+                </div>
+
+                <div class="feedback-card left">
+                    <img class="left" src="./assets/images/interior-2.png">
+                    <div class="right">
+                        <div class="contact-info">
+                            <div class="top-right">“</div>
+                            <div class="left thumbnail" style="background-image: url(./images/WhatsApp-Image-2020-06-22-at-10.10.11-AM-254x300.jpeg);"></div>
+                            <div>
+                                <h2>Mr. Darshana Perera</h2>
+                                <h3>Buissnessmen - Oral Lanka</h3>
+                                <div class="starboard"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="lorem"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Section 5 -->
+
+    <!-- Footer -->
+    <footer>
+        <h1>Contact Massar Briggs</h1>
+        <row id="contact-cards" class="container">
+            <div class="contact-card left">
+                <a href="tel:+94 77 869 3787">
+                    <div class="left thumbnail" style="background-image: url(./assets/images/WhatsApp-Image-2020-06-22-at-10.10.11-AM-254x300.jpeg);"></div>
+                    <a class="right">Dishni De Thabrew<p class="tele-no">+94 77 869 3787</p></a>
+                </a>
+            </div>
+
+            <div class="contact-card right">
+                <a href="#request-call">
+                    <div class="left thumbnail" style="background-image: url(./assets/icons/user.png);"></div>
+                    <a class="right">REQUEST A CALL</a>
+                </a>
+            </div>
+        </row>
+
+        <row id="newsletter-" class="container">
+            <div class="container newsletter">
+                <input class="left" placeholder="Your Email address">
+                <button class="right">Subscribe</button>
+            </div>
+
+            <div class="socials-bar">
+                <a href="www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="www.twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="www.youtube.com" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <p class="address-info">No. 93 Horton Place, Colombo 7, Sri Lanka</p>
+        </row>
+
+        <img class="banner" src="./assets/images/banner.png">
+
+        <div class="footer-nav">
+            <a href="#buy">Buy</a>
+            <a href="#rent">Rent</a>
+            <a href="#sell">Sell</a>
+            <a href="#faq">Request a Property</a>
+            <a href="#blog">Blog</a>
+            <a href="#about-us">About Us</a>
+            <a href="#contact-us">Contact Us</a>
+        </div>
+
+        <div class="copy-right-bar">
+            <lable class="inherit">Copyright © 2020 MASSAR BRIGGS. All rights reserved Solution By <a class="inherit" href="https://www.domedia.lk/" target="_blank">DoMedia</a></lable>
+        </div>
+    </footer>
+    <!-- End: Footer-->
+
+    <!-- Login pop up -->
+    <div class="hidden" id="login-popup">
+        <button class="right" id="login-close-btn">&times;</button>
+        <div class="container">
+            <div class="container text-center">
+                <h3>Sign in or Register</h3>
+                <p>to save your favourite properties</p>
+            </div>
+
+            <div class="slider container text-center">
+                <button class="active" id="log-in">Sign in</button>
+                <button class id="sign-up">New account</button>
+            </div>
+
+            <div class="container" id="login-panel">
+                <div class="container" id="username">
+                    <label>Email</label>
+                    <input type="email" name="username" id="alf-username" placeholder="Enter email" autocomplete="nope"></input>
+                </div>
+
+                <div class="container" id="password">
+                    <label>Password</label>
+                    <input type="password" name="password" id="alf-password" placeholder="Enter password" autocomplete="new-password" aria-autocomplete="list"></input>
+                </div>
+
+                <div class="text-center">
+                    <button id="pop-login-btn">Log in</button>
+                    <div id="login-text"><a href="#" >Forgot your password?</a></div>
+                </div>
+
+                <div class="socials-login text-center">
+                    <p class="strike-through"><span>or</span></p>
+                </div>
+
+                <div class="container">
+                    <button class="social-btn" id="fb-btn">
+                        <div class="text-center">
+                            <svg class="left" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M22.688 0H1.323C.589 0 0 .589 0 1.322v21.356C0 23.41.59 24 1.323 24h11.505v-9.289H9.693V11.09h3.124V8.422c0-3.1 1.89-4.789 4.658-4.789 1.322 0 2.467.1 2.8.145v3.244h-1.922c-1.5 0-1.801.711-1.801 1.767V11.1h3.59l-.466 3.622h-3.113V24h6.114c.734 0 1.323-.589 1.323-1.322V1.322A1.302 1.302 0 0 0 22.688 0z"></path></svg>
+                            <p class="text-center">Login with <b>Facebook</b></p>
+                        </div>
+                    </button>
+
+                    <button class="social-btn" id="gl-btn">
+                        <div class="text-center">
+                            <svg class="left" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#4285F4" fill-rule="nonzero" d="M20.64 12.2045c0-.6381-.0573-1.2518-.1636-1.8409H12v3.4814h4.8436c-.2086 1.125-.8427 2.0782-1.7959 2.7164v2.2581h2.9087c1.7018-1.5668 2.6836-3.874 2.6836-6.615z"></path><path fill="#34A853" fill-rule="nonzero" d="M12 21c2.43 0 4.4673-.806 5.9564-2.1805l-2.9087-2.2581c-.8059.54-1.8368.859-3.0477.859-2.344 0-4.3282-1.5831-5.036-3.7104H3.9574v2.3318C5.4382 18.9832 8.4818 21 12 21z"></path><path fill="#FBBC05" fill-rule="nonzero" d="M6.964 13.71c-.18-.54-.2822-1.1168-.2822-1.71s.1023-1.17.2823-1.71V7.9582H3.9573A8.9965 8.9965 0 0 0 3 12c0 1.4523.3477 2.8268.9573 4.0418L6.964 13.71z"></path><path fill="#EA4335" fill-rule="nonzero" d="M12 6.5795c1.3214 0 2.5077.4541 3.4405 1.346l2.5813-2.5814C16.4632 3.8918 14.426 3 12 3 8.4818 3 5.4382 5.0168 3.9573 7.9582L6.964 10.29C7.6718 8.1627 9.6559 6.5795 12 6.5795z"></path><path d="M3 3h18v18H3z"></path></g></svg>
+                            <p>Login with <b>Google</b></p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: Login pop up -->
+
+    <script src="./assets/libs/aos/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
